@@ -1,0 +1,19 @@
+const HOST = "http://localhost:8888";
+
+/**
+ * 이메일 중복 검사 Fetch
+ */
+
+export async function checkEmail(email){
+    fetch(`${HOST}/api/v1/member/available/{email}/${email}`, {method: "GET"});
+}
+
+/**
+ * 회원가입
+ */
+export async function regist(email, name, password) {}
+
+/**
+ * 로그인 토큰 발급
+ */
+export async function getToken(email, password) {}
